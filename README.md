@@ -52,6 +52,12 @@ SHOW MASTER STATUS;
 ![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/a8ed6ee0-f3fe-4658-aa64-b1fff77dde70)
 
 
+Arrêtez le serveur avant de configurer la réplication;
+
+```bash
+STOP SLAVE ;
+```
+
 Configurer la réplication avec la seconde instances;
 
 
@@ -70,8 +76,26 @@ NB: Pour la section MASTER_HOST : mettre l'adresse IP du maître, MASTER_USER : 
 
 
 mysql-bin.000009 : MASTER_LOG_FILE
+
 783: MASTER_LOG_POS
 
+Ensuite, allumer le slave;
 
+```bash
+START SLAVE;
+```
+
+Pour vérifier si la réplication a fonctionné, il faut exécuter cette commande :
+
+```bash
+SHOW SLAVE STATUS\G;
+```
+
+
+![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/f586eefa-dfda-4e38-97f0-b807389047fb)
+
+
+
+Dans cette image, la connexion fonctionne. Veuillez prendre en compte le statut des sections que j'ai indiquées dans la photo. Si ce n'est pas le cas, cela signifie que votre réplication n'a pas fonctionné. Dans ce cas, ne paniquez pas, mais vérifiez plutôt si vous avez autorisé le port 3306 en entrant, puis réessayez.
 
 
