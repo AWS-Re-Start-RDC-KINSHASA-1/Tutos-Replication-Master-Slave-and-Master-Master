@@ -95,6 +95,9 @@ SHOW SLAVE STATUS\G;
 ![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/f586eefa-dfda-4e38-97f0-b807389047fb)
 
 
+# Tutos-Replication-Master-Master
+
+
 
 Dans cette image, la connexion fonctionne. Veuillez prendre en compte le statut des sections que j'ai indiquées dans la photo. Si ce n'est pas le cas, cela signifie que votre réplication n'a pas fonctionné. Dans ce cas, ne paniquez pas, mais vérifiez plutôt si vous avez autorisé le port 3306 en entrant, puis réessayez.
 
