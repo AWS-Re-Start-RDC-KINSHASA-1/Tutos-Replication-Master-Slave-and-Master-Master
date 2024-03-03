@@ -52,5 +52,26 @@ SHOW MASTER STATUS;
 ![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/a8ed6ee0-f3fe-4658-aa64-b1fff77dde70)
 
 
+Configurer la réplication avec la seconde instances;
+
+
+```bash
+CHANGE MASTER TO
+   MASTER_HOST='second_instance_ip',
+   MASTER_USER='repl',
+   MASTER_PASSWORD='your_password',
+   MASTER_LOG_FILE='second_master_log_file',
+   MASTER_LOG_POS=second_master_log_pos;
+```
+
+NB: Pour la section MASTER_HOST : mettre l'adresse IP du maître, MASTER_USER : mettre le nom de l'utilisateur créé, MASTER_PASSWORD : mettre le mot de passe créé pour l'utilisateur, MASTER_PASSWORD : mettre le fichier journal et le MASTER_LOG_POS : mettre la position.
+
+![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/66ff21de-192e-416d-a1ba-9105a3cf1be4)
+
+
+mysql-bin.000009 : MASTER_LOG_FILE
+783: MASTER_LOG_POS
+
+
 
 
