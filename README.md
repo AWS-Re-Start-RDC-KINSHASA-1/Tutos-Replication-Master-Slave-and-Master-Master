@@ -29,3 +29,12 @@ Ensuite rédemarer mariadb;
 sudo systemctl restart mariadb
 ```
 
+Ensuite créer un user et donner les privillèges;
+
+```bash
+CREATE USER 'replication_user'@'%' IDENTIFIED BY 'your_password';
+GRANT REPLICATION SLAVE ON *.* TO 'replication_user'@'%';
+FLUSH PRIVILEGES;
+```
+
+
