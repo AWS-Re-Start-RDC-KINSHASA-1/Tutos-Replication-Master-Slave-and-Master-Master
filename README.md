@@ -3,12 +3,8 @@ Ce tuto nous montre comment faire la replication entre deux bases des données m
 
 Etape pour l'installation de Mariadb;
 
-` ` `<sql>
+```bash
 sudo yum install mariadb-server
-` ` `
-` ` `<sql>
 sudo systemctl start mariadb
-` ` `
-` ` `<sql>
 sudo systemctl enable mariadb
-` ` `
+```
