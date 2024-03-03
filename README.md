@@ -5,6 +5,10 @@ Etape pour l'installation de Mariadb;
 
 ` ` `<sql>
 sudo yum install mariadb-server
+` ` `
+` ` `<sql>
 sudo systemctl start mariadb
+` ` `
+` ` `<sql>
 sudo systemctl enable mariadb
 ` ` `
