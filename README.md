@@ -8,3 +8,9 @@ sudo yum install mariadb-server
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
+
+Secure MariaDB installation;
+```bash
+sudo mysql_secure_installation
+```
+
