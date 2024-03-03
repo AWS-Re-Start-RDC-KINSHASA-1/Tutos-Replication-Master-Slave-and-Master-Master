@@ -37,4 +37,20 @@ GRANT REPLICATION SLAVE ON *.* TO 'replication_user'@'%';
 FLUSH PRIVILEGES;
 ```
 
+NB: Remplace 'replication_user' par ton nom et 'your_password' par ton mot de passe choisi. Voici un exemple :
+
+
+![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/ee150c7f-b6b2-46b6-84b0-b494e9c1fa1f)
+
+
+Ensuite, vérifiez le statut du master;
+
+```bash
+SHOW MASTER STATUS;
+```
+
+![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/a8ed6ee0-f3fe-4658-aa64-b1fff77dde70)
+
+
+
 
