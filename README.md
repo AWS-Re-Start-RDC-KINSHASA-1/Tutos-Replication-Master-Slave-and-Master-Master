@@ -23,3 +23,9 @@ Vous devrez avoir cette configuration;
 
 ![image](https://github.com/AWS-Re-Start-RDC-KINSHASA-1/Tutos-Replication-Master-Slave-and-Master-Master/assets/114914329/d02471b0-39f9-4a8e-bf48-40ace7e2d5c4)
 
+Ensuite rédemarer mariadb;
+
+```bash
+sudo systemctl restart mariadb
+```
+
