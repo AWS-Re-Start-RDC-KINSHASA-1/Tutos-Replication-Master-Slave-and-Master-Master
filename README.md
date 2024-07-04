@@ -102,7 +102,7 @@ Dans cette image, la connexion fonctionne. Veuillez prendre en compte le statut 
 
 
 
-# Tutos-Replication-Master-Slave
+# Tutos-Replication-Master-master
 
 Ici chaque opération est effectuée dans les deux instances car il s'agit de la réplication master-master.Cela signifie que les deux instances sont capables à la fois de lire et d'écrire des données, ce qui permet une meilleure disponibilité et une meilleure tolérance aux pannes. En cas de défaillance d'une instance, l'autre peut prendre le relais sans interruption de service. Cette architecture offre une grande flexibilité et une meilleure répartition de la charge, ce qui en fait un choix populaire pour les applications nécessitant une haute disponibilité et une grande capacité de traitement.
 
